@@ -1,0 +1,105 @@
+import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+*,
+* ::before
+*::before,
+* ::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+  --primary: black;
+  --secondary:white;
+  --Tertiary: grey;
+  --Quantanary: darkgrey;
+  --mainBoxShadow: .5vw .5vw .3vw var(--alternative)
+  --BorderColor:  var(--primary)                 
+  --elementShadow: .2vw .3vw .2vw  rgb(228, 217, 195);
+}
+
+*,
+* ::before
+*::before,
+* ::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+#output{
+  height: ;
+}
+.calculator {
+    width: 350px;
+    margin: 100px auto;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.keys{
+  align-items: center;
+}
+.display {
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.buttons, .operators {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button, .operator {
+    background-color: black;
+    color: grey;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white ;
+}
+
+.button:nth-child(4n) {
+    grid-column: span 2;
+}
+
+.operator:hover {
+ background-color: white;
+}
+
+#discard{
+ color: grey;
+ font-weight: 400;
+ background-color: #000;
+}
+.answer{
+  width: 150px;
+  background-color: grey;
+  color: black;
+  border-radius: 5px;
+  font-weight: 400;
+}
+.answer:hover{
+  background-color: white;
+}
+
+
