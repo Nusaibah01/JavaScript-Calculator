@@ -18,13 +18,22 @@ import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-i
   --elementShadow: .2vw .3vw .2vw  rgb(228, 217, 195);
 }
 
-*,
-* ::before
-*::before,
-* ::after{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+
+#JS{
+    text-align: center;
+    color: var(--Quantanary);
+}
+.container{
+    /* margin: 0 auto;
+    width: 50%;
+    padding: 70px;
+    border: #000; */
+    width: 188px ;
+    height: 375px;
+    margin-left: 350px;
+     margin-top: 65px;
+    background-color: black;
+    padding-left: 30px;
 }
 body {
     font-family: 'Times New Roman', Times, serif;
@@ -45,6 +54,7 @@ body {
 }
 .keys{
   align-items: center;
+  border-radius: 5px solid var(--mainBoxShadow);
 }
 .display {
     background-color: #000;
@@ -102,4 +112,7 @@ body {
   background-color: white;
 }
 
-
+#output{
+    height: 5vh;
+    width: 25%
+}
