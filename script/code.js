@@ -1,74 +1,17 @@
-// // const display = document.getElementById('output');
-// // const button = document.querySelectorAll(".calculator input[type='button']")
-// // const discard =document.getElementById('discard')
-
-
-// buttons.forEach(button => {
-//     if (button.value === "=") {
-//         calculate();
-//     }else if (button.value === "CE") {
-//         clearDisplay();
-//     } else {
-//         addToDisplay(button.value);
-//     }
-// });
-// function add() {
-//     let num1 = parseFloat(document.getElementById("num1").value);
-//     let num2 = parseFloat(document.getElementById("num2").value);
-//     document.getElementById("result").value = (num1 + num2).toFixed(2);
-// }
-
-// function subtract() {
-//     let num1 = parseFloat(document.getElementById("num1").value);
-//     let num2 = parseFloat(document.getElementById("num2").value);
-//     document.getElementById("result").value = (num1 - num2).toFixed(2);
-// }
-
-// function multiply() {
-//     let num1 = parseFloat(document.getElementById("num1").value);
-//     let num2 = parseFloat(document.getElementById("num2").value);
-//     document.getElementById("result").value = (num1 * num2).toFixed(2);
-// }
-
-// function divide() {
-//     let num1 = parseFloat(document.getElementById("num1").value);
-//     let num2 = parseFloat(document.getElementById("num2").value);
-//     if (num2 !== 0) {
-//         document.getElementById("result").value = (num1 / num2).toFixed(2);
-//     } else {
-//         alert("Error: Division by zero!");
-    
-//
-(function(){
-  
-    let screen = document.querySelector('.screen');
-    let buttons = document.querySelectorAll('.btn');
-    let clear = document.querySelector('.btn-clear');
-    let equal = document.querySelector('.btn-equal');
-    
-    //retrieve data from numbers that are clicked
-    buttons.forEach(function(button){
-      button.addEventListener('click', function(e){
-        let value = e.target.dataset.num;
-        screen.value += value;
-      })
-    });
-    
-    equal.addEventListener('click', function(e){
-      if(screen.value === ''){
-        screen.value = 'Please Enter a Value';
-      } else {
-        let answer = eval(screen.value);
-        screen.value = answer;
-      }
-    })
-    
-    clear.addEventListener('click', function(e){
-      screen.value = '';
-    })
-   
-  })(); 
-
+const  display = document.getElementById('display')
+function addToDisplay(input) {
+ display.value += input;
+}
+function clearDisplay() {
+display.value = ''
+}
+function calculate() {
+try{
+  display.value += eval(display.value)
+}catch(e) {
+ display.value = 'ERROR'
+}
+}
 
 
 

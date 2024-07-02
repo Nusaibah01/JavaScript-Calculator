@@ -1,4 +1,5 @@
-import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+
 *,
 * ::before
 *::before,
@@ -41,8 +42,8 @@ body {
     margin: 0;
     padding: 0;
 }
-#output{
-  height: ;
+#display{
+  width: 120px;
 }
 .calculator {
     width: 350px;
